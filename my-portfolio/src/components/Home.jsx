@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa6";
 
 export default function Home() {
-    const words = ["Web Developer", "Mobile Developer", "Project Manager"];
+    const words = ["Full-Stack Developer", "Project Manager", "Continuous Learner"];
     const [text, setText] = useState("");
     const [wordIndex, setWordIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
@@ -41,22 +41,10 @@ useEffect(() => {
 return (
     <div className="relative min-h-screen bg-[#000910] text-white font-[Poppins] overflow-x-hidden">
         
-        {/* Navbar */}
-        <header className="flex justify-center">
-            <nav className="bg-[#000910] border border-[#003A6B] rounded-b-xl px-12 py-4 mt-0">
-                <ul className="flex gap-40 font-semibold text-white">
-                    <li><a href="#" className="">Home</a></li>
-                    <li><a href="#services" className="">Services</a></li>
-                    <li><a href="#projects" className="">Projects</a></li>
-                    <li><a href="#skills" className="">Skills</a></li>
-                    <li><a href="#contact" className="">Contacts</a></li>
-                </ul>
-            </nav>
-        </header>
 
         {/* Hero */}
-        <section className="text-center px-7 py-30 relative">
-            <h2 className="text-2xl text-gray-400 mb-6">I am Elvin</h2>
+        <section className="text-center px-7 py-45 relative">
+            <h2 className="text-1xl md:text-2xl text-gray-400 mb-6">I am Elvin a</h2>
 
             {/* Typing Effect */}
             <h1 className="text-4xl md:text-6xl font-bold text-gray-300  bg-clip-text mb-9">
@@ -84,25 +72,25 @@ return (
         <div className="flex justify-center gap-5 mt-4">
             <a
             href="#"
-            className="inline-flex items-center gap-2 border border-[#376BAE] px-6 py-3 rounded-md "
+            className="inline-flex items-center gap-2 border border-[#003A6B] px-6 py-3 rounded-md "
             >
                 <FaDownload /> Download CV
             </a>
             <a
             href="#"
-            className="flex items-center justify-center w-12 h-12 border border-[#305B94] rounded-full text-xl text-[#305B94]"
+            className="flex items-center justify-center w-12 h-12 border border-[#003A6B] rounded-full text-xl text-[#305B94]"
             >
                 <FaLinkedinIn />
             </a>
             <a
             href="#"
-            className="flex items-center justify-center w-12 h-12 border border-[#305B94] rounded-full text-xl text-[#305B94]"
+            className="flex items-center justify-center w-12 h-12 border border-[#003A6B] rounded-full text-xl text-[#305B94]"
             >
                 <FaGithub />
             </a>
             <a
             href="#"
-            className="flex items-center justify-center w-12 h-12 border border-[#305B94] rounded-full text-xl text-[#305B94]"
+            className="flex items-center justify-center w-12 h-12 border border-[#003A6B] rounded-full text-xl text-[#305B94]"
             >
                 <FaEnvelope />
             </a>
