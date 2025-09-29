@@ -13,7 +13,6 @@ export default function Home() {
     const [charIndex, setCharIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
 
-
 useEffect(() => {
     const currentWord = words[wordIndex];
     let typingSpeed = isDeleting ? 60 : 230;
@@ -37,14 +36,13 @@ useEffect(() => {
     return () => clearTimeout(timeout);
 }, [charIndex, isDeleting, wordIndex]);
 
-
 return (
     <div className="relative min-h-screen bg-[#000910] text-white font-[Poppins] overflow-x-hidden">
         
 
         {/* Hero */}
         <section className="text-center px-7 py-45 relative">
-            <h2 className="text-1xl md:text-2xl text-gray-400 mb-6">I am Elvin a</h2>
+            <h2 className="text-1xl md:text-2xl text-gray-400 mb-6">I am Elvin, a</h2>
 
             {/* Typing Effect */}
             <h1 className="text-4xl md:text-6xl font-bold text-gray-300  bg-clip-text mb-9">
@@ -90,7 +88,7 @@ return (
             </a>
             <a
             href="#"
-            className="flex items-center justify-center w-12 h-12 border border-[#003A6B] rounded-full text-xl text-[#305B94]"
+            className="flex items-center justify-center w-12 h-12 border border-[#003A6B        ] rounded-full text-xl text-[#305B94]"
             >
                 <FaEnvelope />
             </a>
