@@ -37,12 +37,16 @@ useEffect(() => {
 }, [charIndex, isDeleting, wordIndex]);
 
 return (
+    
     <div className="relative min-h-screen bg-[#000910] text-white font-[Poppins] overflow-x-hidden">
-        
+        {/* Ellipse */}
+        <div className="absolute -top-70 -left-40 w-120 h-120 rounded-full bg-[#003A6B] opacity-20 blur-xl"></div>
+        <div className="absolute bottom-40 right-90 w-80 h-80 rounded-full bg-[#003A6B] opacity-20 blur-xl"></div>
 
         {/* Hero */}
         <section className="text-center px-7 py-45 relative">
-            <h2 className="text-1xl md:text-2xl text-gray-400 mb-6">I am Elvin, a</h2>
+            
+            <h2 className="text-1xl md:text-2xl text-gray-400 mb-6">I am Elvin</h2>
 
             {/* Typing Effect */}
             <h1 className="text-4xl md:text-6xl font-bold text-gray-300  bg-clip-text mb-9">

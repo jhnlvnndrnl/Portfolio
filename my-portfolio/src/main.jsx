@@ -1,9 +1,10 @@
 import { StrictMode, useState, useEffect } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import { PuffLoader } from "react-spinners"; 
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import { PuffLoader } from "react-spinners"; 
+import Services from "./components/Services";
 
 function Main() {
   const [isLoading, setIsLoading] = useState(true);
@@ -26,6 +27,7 @@ function Main() {
     <>
       <Navbar />
       <Home />
+      <Services />  
     </>
   );
 }
